@@ -1,0 +1,124 @@
+4<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="odevv.css">
+    <title>İş Başvuru Formu</title>
+</head>
+<body>
+    <h1> Veysel BiLİCİ VYT HOLDİNG </h1>
+
+    <nav id="Anasayfa">
+        <a href="odev.html"><h1>Anasayfa</h1></a>
+        
+        <ul> 
+            <li><a href="#hakkımda">Hakkımda</a></li> 
+            <li><a href="#deneyim">Deneyim</a></li>
+            <li><a href="#iletişim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <section id="hakkımda">
+        <h2>Hakkımda</h2>
+        <form>
+            <label for="ad">Adınız:</label>
+            <input type="text" id="ad" name="ad" required>
+            <label for="soyad">Soyadınız : </label>
+            <input type="text" id="soyad" name="soyad" required>
+            <label for="Resim">Resim ekle :</label>
+            <input type="file" id="Resim" name="Resim"required>
+
+            <label for="yaş">Yaşınız:</label>
+            <input type="number" id="yaş" name="yaş" required>
+            <label for="Cinsiyet"> Cinsiyetiniz:</label> 
+            <input type="radio" id="Cinsiyet" value="kız"required>
+            <input type="checkbox" name="müzikturu" value="Pop" checked="checked" />Pop
+            <form action="kaydet.php" method="get">
+                <select name="Cinsiyet" multiple="multiple">
+                    <option>Erkek</option>
+                    <option selected="selected">Kadın</option>
+                    <option>Hiçbiri</option>
+                </select>
+        
+            </form>
+            <br>
+
+            <label for="egitim">Eğitim Bilgileri:</label>
+            <input type="text" id="egitim" name="egitim" required>
+            <label for="egitim" >Lisans egitimi: </label>
+            <input type="text" id="egitim" name="egitim" required>
+            <p> Yabancı diller:</p>
+                                <input type="checkbox" value="ingilizce" > İngiizce</p>
+                                <input type="checkbox" value="Almanca"> Almanca</p>
+                                <input type="checkbox" value ="Fransızca">Fransızca</p>  
+        </form>
+    </section>
+
+    <section id="deneyim">
+        <h2>Deneyim</h2>
+        <form>
+            <label for="şirket">Şirket Adı:</label>
+            <input type="text" id="şirket" name="şirket" required>
+
+            <label for="pozisyon">Pozisyon:</label>
+            <input type="text" id="pozisyon" name="pozisyon" required>
+
+            <label for="çalışmasüresi">Çalışma Süresi:</label>
+            <input type="text" id="çalışmasüresi" name="çalışmasüresi" required>
+
+        </form>
+    </section>
+
+    <section id="iletişim">
+        <h2>İletişim</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p> E posta: <input type="email"></p>
+            <p> E posta: <input type="email"></p> 
+            
+
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required>
+        </form>
+    </section>
+    <form action="kaydet.php" method="get">
+        <input type="submit" name="kaydet" value="Gönder" />
+        <br>
+        <br>
+        <input type="reset" name="temizle" value="Temizle" />
+        <br>
+        <br>
+    </form>
+
+</body>
+<body>
+    <pi d="demo"></p>
+    <button onclick="myVar=setInterval(myTimer, 1000)">Başlat</button>
+    <button onclick="clearTimeout(myVar)">Durdur</button>
+</body>
+<script> 
+var myVar= setInterval(myTimer, 1000); 
+function myTimer()
+ {
+    var d = newDate();
+    document.getElementById("demo").innerHTML= d.toLocaleTimeString();
+ }
+</script>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+var person= prompt("Please enter your name", "Harry Potter");
+if(person== null|| person== "") 
+{
+    txt = "User cancelled the prompt.";
+}
+else{
+    txt = "Hello"+ person+ "! How are you today?";
+}
+document.getElementById("demo").innerHTML=txt;
+</script>
+</html>
+
